@@ -22,3 +22,7 @@
 hs_err_pid*
 /.classpath
 /.project
+/*.iml
+/.idea
+
+example_mazes/*.txt
