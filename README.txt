@@ -8,7 +8,7 @@ The program accepts image of a robot in a maze and produces path for the robot t
 It also graphically simulates the robot motion. 
 
 Project requirements:
-- JDK - recommended version 1.7
+    - JDK - recommended version 1.7
  
 Project input:
     - single image file in one of these formats:
@@ -22,14 +22,14 @@ Project output:
     - robot commands in a text file ('_commands' suffix) - a path if available represented by directions and step counts
     - some statistics in a text file ('_statistics' suffix) - some timings and maze parameters
     - graphic simulation of the robot motion
-    
+
 Project configuration:
     - config.properties file with the following properties:
         * IMAGE_CHOOSER_FLAG - enables popup image selection window for image files
         * MONITOR_SIMULATION_FLAG - enables the animated simulation
         * SWING_SUPPORTED flag - enables popup warning messages; auto-enabled if one of the above flags is set
         * FILE_NAME - input file to process if IMAGE_CHOOSER_FLAG is not set
-        * PICTURE_FILE_FLAG - the type of the file pointed by FILE_NAME - 'image' or 'text'
+        * PICTURE_FILE_FLAG - tells the type of the file pointed by FILE_NAME - 1 for image, 0 for text
 
         - note: the config file has to be located in the working directory
 	
