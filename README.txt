@@ -9,6 +9,7 @@ It also graphically simulates the robot motion.
 
 Project requirements:
     - JDK - recommended version 1.7
+    - maven build tool
  
 Project input:
     - single image file in one of these formats:
@@ -30,11 +31,10 @@ Project configuration:
         * SWING_SUPPORTED flag - enables popup warning messages; auto-enabled if one of the above flags is set
         * FILE_NAME - input file to process if IMAGE_CHOOSER_FLAG is not set
         * PICTURE_FILE_FLAG - tells the type of the file pointed by FILE_NAME - 1 for image, 0 for text
-
-        - note: the config file has to be located in the working directory
 	
 Project build:
-    - build as standard java console application
+    - mvn clean install
     
 Project run:
-    - main class: Main/RobotInLabyrinthByPicture
+    1. cd target/classes
+    2. java Main/RobotInLabyrinthByPicture
