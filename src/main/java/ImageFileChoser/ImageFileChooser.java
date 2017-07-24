@@ -4,6 +4,7 @@ import java.io.File;
 
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 import Exceptions.FileNoSelectedException;
 
@@ -30,7 +31,6 @@ public class ImageFileChooser {
 		fc.setDialogTitle("Select an image");
 		// Add the preview pane.
 		fc.setAccessory(new ImagePreview(fc, 600));
-
 		// GetNewFile();
 	}
 
@@ -42,7 +42,7 @@ public class ImageFileChooser {
 	 */
 	public File GetNewFile() throws FileNoSelectedException {
 		JFrame chooserFrame = new JFrame();
-		chooserFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		chooserFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		int userChoice = fc.showOpenDialog(chooserFrame);
 		if (userChoice != JFileChooser.APPROVE_OPTION) {
 			throw new FileNoSelectedException();

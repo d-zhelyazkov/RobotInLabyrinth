@@ -1,6 +1,7 @@
 package Main;
 
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 import BaseObjects.MazeDTO;
 import Maze.MazeMonitor;
@@ -44,7 +45,7 @@ public class SimulateRobotMovement extends AbstractTimeMeasuredFunction {
 			final MazeMonitor mazeMonitor) {
 		JFrame window = new JFrame();
 
-		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		window.pack();
 		window.setLocationRelativeTo(null);
 		window.setSize(maze.width + 10, maze.height + 30);
